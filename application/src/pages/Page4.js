@@ -1,7 +1,8 @@
 // src/pages/Page4.js
 import React from "react";
 import StoryCard from "../components/StoryCard";
-import { Button } from "@mui/material";
+import { Button, Typography } from "@mui/material";
+import ArrowCircleRight from "@mui/icons-material/ArrowCircleRight";
 
 const Page4 = () => {
   const [index, setIndex] = React.useState(0);
@@ -35,15 +36,27 @@ const Page4 = () => {
         flexDirection: "column",
       }}
     >
+      {/* {stories.map(() => {
+        return (
+          <Typography variant="h4" component="div">
+            Stories
+          </Typography>
+        );
+      })} */}
+
       <StoryCard
         name={stories[index].name}
         description={stories[index].description}
       />
 
-      <div style={{ textAlign: "center" }}>
+      <div style={{ textAlign: "center", marginTop: "5vh" }}>
         <Button variant="contained" onClick={handleClick}>
-          NEXT
+          <ArrowCircleRight />
         </Button>
+
+        <Typography variant="h6" component="div">
+          {index + 1} of {stories.length}
+        </Typography>
       </div>
     </div>
   );
