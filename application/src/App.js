@@ -1,6 +1,11 @@
 // src/App.js
-import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import React, { useEffect } from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useNavigate,
+} from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Page1 from "./pages/Page1";
 import Page2 from "./pages/Page2";
@@ -13,6 +18,7 @@ const App = () => {
     <Router>
       <div style={{ paddingBottom: "50px" }}>
         <Routes>
+          <Route path="/" element={<Page1 />} />
           <Route path="/page1" element={<Page1 />} />
           <Route path="/page2" element={<Page2 />} />
           <Route path="/page3" element={<Page3 />} />

@@ -19,7 +19,7 @@ const Page1 = () => {
         South Bronx United
       </Typography>
 
-      <Typography variant="h8" component="div">
+      <Typography style={{ padding: 15 }} variant="h8" component="div">
         South Bronx United provides academic support, college prep, mentoring,
         workforce development, immigration legal services, and more, while using
         soccer as a vehicle for social change.
