@@ -1,72 +1,51 @@
 // src/pages/Page4.js
 import React from "react";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
-import TextField from "@mui/material/TextField";
+import StoryCard from "../components/StoryCard";
+import { Button } from "@mui/material";
 
 const Page4 = () => {
+  const [index, setIndex] = React.useState(0);
+  const [stories, setStories] = React.useState([
+    {
+      name: "Kevin",
+      description:
+        "Kevin is an interesting fellow... Good PM, but keep him away from the fish tanks.",
+    },
+    {
+      name: "June",
+      description:
+        "June helped us get NPM working by fixing our horrible package.json files!",
+    },
+    {
+      name: "Hannah",
+      description:
+        "Hannah is still upset about the cancelled Taylor Swift concerts.",
+    },
+    { name: "Michael", description: "I followed Michael on Instagram!" },
+  ]);
+
+  const handleClick = () => {
+    setIndex((index + 1) % stories.length);
+  };
+
   return (
-    <Box
-      sx={{
-        padding: "20px",
+    <div
+      style={{
         display: "flex",
         flexDirection: "column",
-        alignItems: "center",
-        gap: "20px",
       }}
     >
-      <Typography variant="h4" component="div">
-        Stories
-      </Typography>
+      <StoryCard
+        name={stories[index].name}
+        description={stories[index].description}
+      />
 
-      <Box
-        sx={{
-          width: "80%",
-          border: "1px solid",
-          borderColor: "grey.400",
-          boxShadow: 3,
-          padding: "10px",
-        }}
-      >
-        <TextField fullWidth label="Name" variant="outlined" />
-      </Box>
-
-      <Box
-        sx={{
-          width: "80%",
-          height: "300px",
-          border: "1px solid",
-          borderColor: "grey.400",
-          boxShadow: 3,
-          padding: "10px",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <Typography variant="body1" color="text.secondary">
-          Image Placeholder
-        </Typography>
-      </Box>
-
-      <Box
-        sx={{
-          width: "80%",
-          border: "1px solid",
-          borderColor: "grey.400",
-          boxShadow: 3,
-          padding: "10px",
-        }}
-      >
-        <TextField
-          fullWidth
-          label="Description"
-          multiline
-          rows={4}
-          variant="outlined"
-        />
-      </Box>
-    </Box>
+      <div style={{ textAlign: "center" }}>
+        <Button variant="contained" onClick={handleClick}>
+          NEXT
+        </Button>
+      </div>
+    </div>
   );
 };
 
