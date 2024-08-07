@@ -1,0 +1,23 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+.calendar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white; /* Optional: Ensure it has a background color */
+    z-index: 1000; /* Ensure it's above other content */
+    height: 37vh; /* Set this to the height of your DateCalendar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+  }
+
+  .matchlist-container {
+    margin-top: 37vh; /* Same height as calendar-container to push content below */
+    padding: 20px; /* Optional: Add some padding around the MatchList */
+    height: calc(100vh - 37vh); /* Height of the viewport minus the calendar height */
+    overflow-y: auto; /* Allow vertical scrolling */
+  }
