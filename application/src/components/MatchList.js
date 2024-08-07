@@ -1,20 +1,34 @@
 // src/MatchList.js
 import React from 'react';
 import Match from './Match';
+import GenericEvent from './GenericEvent';
 
-const MatchList = ({ matches }) => {
-  const sortedMatches = [...matches].sort((a, b) => new Date(a.dateTime) - new Date(b.dateTime));
+const MatchList = ({ items }) => {
+  const sortedItems = [...items].sort((a, b) => new Date(a.dateTime) - new Date(b.dateTime));
 
   return (
     <div className="match-list">
-      {sortedMatches.map((match, index) => (
-        <Match
-          key={index}
-          team1={match.team1}
-          team2={match.team2}
-          dateTime={match.dateTime}
-        />
-      ))}
+      {sortedItems.map((item, index) => {
+        if (item.type === 'match') {
+          return (
+            <Match
+              key={index}
+              team1={item.team1}
+              team2={item.team2}
+              dateTime={item.dateTime}
+            />
+          );
+        } else if (item.type === 'event') {
+          return (
+            <GenericEvent
+              key={index}
+              title={item.title}
+              dateTime={item.dateTime}
+            />
+          );
+        }
+        return null;
+      })}
     </div>
   );
 };
