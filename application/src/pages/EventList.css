@@ -1,0 +1,27 @@
+.table-container {
+  max-height: 250px;
+  overflow-y: scroll;
+  border: 3px solid #ccc;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.event-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.event-table th,
+.event-table td {
+  border: 1px solid #ccc;
+  padding: 5px;
+  text-align: left;
+}
+
+.event-table th {
+  background-color: #f0f0f0;
+  position: sticky;
+  top: 0;
+}
