@@ -18,6 +18,5 @@ html, body {
   .matchlist-container {
     margin-top: 37vh; /* Same height as calendar-container to push content below */
     padding: 20px; /* Optional: Add some padding around the MatchList */
-    height: calc(100vh - 37vh); /* Height of the viewport minus the calendar height */
     overflow-y: auto; /* Allow vertical scrolling */
   }
