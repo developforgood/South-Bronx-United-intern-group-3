@@ -23,12 +23,12 @@ export default function Page2() {
     },
     {
       type: 'event',
-      title: 'Community Meetup',
-      dateTime: '2024-08-09T10:00:00Z'
+      title: 'Soccer Tournament Referee - Volunteers Needed!',
+      dateTime: '2024-08-09T14:00:00Z'
     },
     {
       type: 'event',
-      title: 'Workshop on React',
+      title: 'Academic Tutoring (K-3rd) - Volunteers Needed!',
       dateTime: '2024-08-10T13:00:00Z'
     }
   ];
