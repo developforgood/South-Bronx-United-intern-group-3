@@ -1,0 +1,57 @@
+.match {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.date-time-container {
+  margin-bottom: 20px;
+}
+
+.date-time {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.match-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Ensure full-width to center content properly */
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.badge {
+  height: 60px; /* Set height as needed */
+  width: auto;  /* Allow width to adjust automatically */
+  object-fit: contain; /* Maintain aspect ratio without stretching */
+  margin-bottom: 5px;
+}
+
+.team-name {
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center; /* Center text within the team container */
+}
+
+.vs {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 0 20px;
+}
