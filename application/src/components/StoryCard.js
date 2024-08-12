@@ -1,8 +1,10 @@
 import React from "react";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import TextField from "@mui/material/TextField";
-import soccerImage from "../images/soccerstories.jpg";
+import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
+import Send from "@mui/icons-material/Send";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import Sync from "@mui/icons-material/Sync";
 
 export default function StoryCard(props) {
   return (
@@ -12,53 +14,68 @@ export default function StoryCard(props) {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        gap: "20px",
+        height: "800px",
+        scrollSnapAlign: "start",
+        maxWidth: "700px",
       }}
     >
-      <Typography variant="h4" component="div">
-        Stories
-      </Typography>
-
       <Box
         sx={{
           width: "80%",
-          border: "1px solid",
-          borderColor: "grey.400",
-          boxShadow: 3,
-          padding: "10px",
-        }}
-      >
-        <Typography>{props.name}</Typography>
-      </Box>
-
-      <Box
-        sx={{
-          width: "80%",
-          height: "300px",
           border: "1px solid",
           borderColor: "grey.400",
           boxShadow: 3,
           padding: "10px",
           display: "flex",
-          justifyContent: "center",
           alignItems: "center",
+          flexDirection: "column",
+          height: "800",
         }}
       >
-        <Box>
-          <img style={{ height: "300px" }} src={soccerImage}></img>
-        </Box>
-      </Box>
+        <div style={{ marginBottom: "2vh" }}>
+          <Typography variant="h3">{props.name}</Typography>
+        </div>
 
-      <Box
-        sx={{
-          width: "80%",
-          border: "1px solid",
-          borderColor: "grey.400",
-          boxShadow: 3,
-          padding: "10px",
-        }}
-      >
-        <Typography>{props.description}</Typography>
+        <hr style={{ width: "100%" }} />
+        <img alt="" style={{ height: "200px" }} src={props.badge}></img>
+
+        <hr style={{ width: "100%" }} />
+
+        <Box
+          sx={{
+            height: "360px",
+            overflowY: "auto",
+            padding: "10px",
+            boxSizing: "border-box",
+          }}
+        >
+          <Typography>{props.description}</Typography>
+        </Box>
+
+        <hr style={{ width: "100%" }} />
+
+        <Box
+          sx={{
+            height: "60px",
+            width: "100%",
+            overflowY: "auto",
+            padding: "10px",
+            boxSizing: "border-box",
+          }}
+        >
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-between",
+            }}
+          >
+            <FavoriteBorderIcon />
+            <ChatBubbleOutlineIcon />
+            <Sync />
+            <Send />
+          </Box>
+        </Box>
       </Box>
     </Box>
   );
