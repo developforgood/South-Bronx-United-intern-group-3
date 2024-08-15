@@ -42,12 +42,6 @@ const MatchList = ({ items, datetime, showAll }) => {
         const month = monthMap[localdatetime[1].substring(1, 2)];
         const day = localdatetime[2].substring(0, 2);
 
-        // console.log(year, month, day);
-        // console.log(selectedyear, selectedmonth, selectedday);
-        // console.log("---");
-
-        console.log(showAll);
-
         if (item.type === "match") {
           if (
             (day === selectedday &&
