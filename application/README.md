@@ -1,6 +1,22 @@
-# Getting Started with Create React App
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Getting Started
+Clone the repository
+```
+git clone https://github.com/developforgood/South-Bronx-United-intern-group-3.git
+```
+`cd` into the project directory
+```
+cd application
+```
+Install the required node modules
+```
+npm install
+```
+Run the project
+```
+npm start
+```
 
 ## Available Scripts
 
