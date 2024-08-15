@@ -1,7 +1,7 @@
 # Clubhouse Cafe App
 
 ## Problem
-At the start of 2024, South Bronx United (SBU) launched the Clubhouse Cafe to enhance career development for young adults. However, despite this initiative, SBU faces challenges to raise awareness of the broader mission of the organization to Clubhouse Cafe customers, which is to support the youth of South Bronx academically and socially through soccer. During a field research trip to the cafe, we interviewed two first-time customers, who were unaware of the SBU organization despite them being there for over an hour. In a stakeholder meeting, a regular customer mentioned how she only became involved with SBU volunteering not through the cafe that she frequented for four times a week, but through a neighbor who informed her about possible initiatives with the organization. These examples stress the need for a **mobile app to notify and enable customers to learn about events that SBU offers, encourage volunteering, provide a platform to donate and interact with Clubhouse Cafe products**.
+At the start of 2024, South Bronx United (SBU) launched the Clubhouse Cafe to enhance career development for young adults. However, despite this initiative, SBU faces challenges to raise awareness of the broader mission of the organization to Clubhouse Cafe customers, which is to support the youth of South Bronx academically and socially through soccer. During a field research trip to the cafe, we interviewed two first-time customers, who were unaware of the SBU organization despite them being there for over an hour. In a stakeholder meeting, a regular customer mentioned how she only became involved with SBU volunteering not through the cafe that she frequented for four times a week, but through a neighbor who informed her about possible initiatives with the organization. These examples stress the need for a **mobile app to notify and enable customers to learn about events that SBU offers, encourage volunteering, provide a platform to donate and interact with Clubhouse Cafe products**. The main target consumer of this app is regular cafe customers, and its main priority is to connect the customer to broader SBU activities. 
 
 ## Requirements
 ### Fundamental Requirements
@@ -120,3 +120,8 @@ Below, we have a rough skeleton of what we envision the app to be. Here are imag
 </div>
 
 #### Please go to `application/README.md` to learn how to run this project on your own machine!
+
+## Other Tech Solutions
+The following solutions presented is not related to the app but could also benefit South Bronx United. 
+- One solution of creating more engagement amongst first time customers is to make the Clubhouse Cafe WiFi public. When accessing the WiFi, the user can have the choice of subscribing to a Clubhouse Cafe/South Bronx United newsletter. The user could also be redirected to a landing page of Clubhouse Cafe's website, allowing customers, if interested, to explore the background of this initiative.
+- Another tech solution could be creating a more personal connection between customer and baristas. After purchase, a user can be sent an email or text message talking about how they helped South Bronx United and the youth of South Bronx with their purchase. If baristas are comfortable and interested, the after-purchase message can also have a link that redirects customers to the background of the barista who just served them. 
